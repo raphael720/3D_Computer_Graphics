@@ -8,6 +8,8 @@ SDL_Window* window = NULL;
 SDL_Renderer* renderer = NULL;
 
 uint32_t* color_buffer = NULL;
+SDL_Texture* color_buffer_texture = NULL;
+
 int window_width = 800;
 int window_height = 600;
 
@@ -16,6 +18,13 @@ bool initialize_window(void) {
 		fprintf(stderr, "Error initialize SDL.\n");
 		return false;
 	}
+
+	// Use SDL to query what is the fullscreen resolution of the display
+	SDL_DisplayMode display_mode;
+	SDL_GetCurrentDisplayMode(0, &display_mode);
+
+	window_width = display_mode.w;
+	window_height = display_mode.h;
 
 	window = SDL_CreateWindow(
 		NULL,
@@ -38,11 +47,22 @@ bool initialize_window(void) {
 		return false;
 	}
 
+	SDL_SetWindowFullscreen(window, SDL_WINDOW_FULLSCREEN);
+
 	return true;
 }
 
 void setup(void) {
 	color_buffer = (uint32_t*)malloc(sizeof(uint32_t) * window_width * window_height);
+
+	// Create SDL texture that is used to display the color buffer
+	color_buffer_texture = SDL_CreateTexture(
+		renderer,
+		SDL_PIXELFORMAT_ARGB8888,
+		SDL_TEXTUREACCESS_STREAMING,
+		window_width,
+		window_height
+	);
 }
 
 void process_input(void) {
@@ -63,9 +83,31 @@ void process_input(void) {
 void update(void) {
 }
 
+void render_color_buffer(void) {
+	SDL_UpdateTexture(
+		color_buffer_texture,
+		NULL,
+		color_buffer,
+		(int)(window_width * sizeof(uint32_t))
+	);
+	SDL_RenderCopy(renderer, color_buffer_texture, NULL, NULL);
+}
+
+void clear_color_buffer(uint32_t color) {
+	for (int y = 0; y < window_height; y++) {
+		for (int x = 0; x < window_width; x++) {
+			color_buffer[(window_width * y) + x] = color;
+		}
+	}
+}
+
 void render(void) {
-	SDL_SetRenderDrawColor(renderer, 255, 0, 0, 255);
+	SDL_SetRenderDrawColor(renderer, 0, 0, 0, 255);
 	SDL_RenderClear(renderer);
+
+	render_color_buffer();
+	clear_color_buffer(0xFFFFFF00);
+
 	SDL_RenderPresent(renderer);
 }
 
