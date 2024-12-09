@@ -1,2 +1,5 @@
-﻿  Main.c
+﻿  display.c
+  Main.c
+  Generating Code...
+C:\Users\rapha\OneDrive\Desktop\Raphael\Projetos\Pikuma\3D_Computer_Graphics\3D_Computer_Graphics\Main.c(44,32): warning C4305: 'function': truncation from 'unsigned int' to 'uint16_t'
   3D_Computer_Graphics.vcxproj -> C:\Users\rapha\OneDrive\Desktop\Raphael\Projetos\Pikuma\3D_Computer_Graphics\x64\Debug\3D_Computer_Graphics.exe
