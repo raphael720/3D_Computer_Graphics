@@ -4,12 +4,12 @@
 typedef struct {
 	float x;
 	float y;
-} Vector2;
+} vec2_t;
 
 typedef struct {
 	float x;
 	float y;
 	float z;
-} Vector3;
+} vec3_t;
 
 #endif
