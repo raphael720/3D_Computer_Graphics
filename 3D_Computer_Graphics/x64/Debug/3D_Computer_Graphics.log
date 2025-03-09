@@ -1,5 +1,4 @@
-﻿  display.c
-  Main.c
-  vector.c
-  Generating Code...
+﻿  Main.c
+C:\Users\rapha\OneDrive\Desktop\Raphael\Projetos\Pikuma\3D_Computer_Graphics\3D_Computer_Graphics\Main.c(84,12): warning C4244: 'function': conversion from 'float' to 'int', possible loss of data
+C:\Users\rapha\OneDrive\Desktop\Raphael\Projetos\Pikuma\3D_Computer_Graphics\3D_Computer_Graphics\Main.c(85,12): warning C4244: 'function': conversion from 'float' to 'int', possible loss of data
   3D_Computer_Graphics.vcxproj -> C:\Users\rapha\OneDrive\Desktop\Raphael\Projetos\Pikuma\3D_Computer_Graphics\x64\Debug\3D_Computer_Graphics.exe

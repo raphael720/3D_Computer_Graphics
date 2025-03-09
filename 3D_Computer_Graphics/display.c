@@ -65,7 +65,7 @@ void draw_pixel(int x, int y, uint32_t color) {
 void draw_rect(int x, int y, int width, int height, uint32_t color) {
 	for (int j = y; j < height + y; j++) {
 		for (int i = x; i < width + x; i++) {
-			color_buffer[(window_width * j) + i] = color;
+			draw_pixel(i, j, color);
 		}
 	}
 }
