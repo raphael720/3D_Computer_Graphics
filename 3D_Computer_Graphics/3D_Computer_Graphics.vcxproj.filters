@@ -13,6 +13,9 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="assets">
+      <UniqueIdentifier>{0a340885-36b9-4e6b-81c5-c7869cff4ee6}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Main.c">
@@ -47,5 +50,16 @@
     <ClInclude Include="array.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Object Include="..\..\assets\cube.obj">
+      <Filter>assets</Filter>
+    </Object>
+    <Object Include="..\..\assets\f22.obj">
+      <Filter>assets</Filter>
+    </Object>
+    <Object Include="..\..\assets\cartoon-car.obj">
+      <Filter>assets</Filter>
+    </Object>
   </ItemGroup>
 </Project>
