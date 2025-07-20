@@ -1,3 +1,11 @@
-﻿  mesh.c
-C:\Users\rapha\OneDrive\Desktop\Raphael\Projetos\Pikuma\3D_Computer_Graphics\3D_Computer_Graphics\mesh.c(59,9): warning C4098: 'load_obj_file_data': 'void' function returning a value
+﻿  Main.c
+C:\Users\rapha\OneDrive\Desktop\Raphael\Projetos\Pikuma\3D_Computer_Graphics\3D_Computer_Graphics\Main.c(67,21): warning C4305: '+=': truncation from 'double' to 'float'
+C:\Users\rapha\OneDrive\Desktop\Raphael\Projetos\Pikuma\3D_Computer_Graphics\3D_Computer_Graphics\Main.c(68,21): warning C4305: '+=': truncation from 'double' to 'float'
+C:\Users\rapha\OneDrive\Desktop\Raphael\Projetos\Pikuma\3D_Computer_Graphics\3D_Computer_Graphics\Main.c(69,21): warning C4305: '+=': truncation from 'double' to 'float'
+C:\Users\rapha\OneDrive\Desktop\Raphael\Projetos\Pikuma\3D_Computer_Graphics\3D_Computer_Graphics\Main.c(138,31): warning C4244: 'function': conversion from 'float' to 'int', possible loss of data
+C:\Users\rapha\OneDrive\Desktop\Raphael\Projetos\Pikuma\3D_Computer_Graphics\3D_Computer_Graphics\Main.c(138,53): warning C4244: 'function': conversion from 'float' to 'int', possible loss of data
+C:\Users\rapha\OneDrive\Desktop\Raphael\Projetos\Pikuma\3D_Computer_Graphics\3D_Computer_Graphics\Main.c(139,31): warning C4244: 'function': conversion from 'float' to 'int', possible loss of data
+C:\Users\rapha\OneDrive\Desktop\Raphael\Projetos\Pikuma\3D_Computer_Graphics\3D_Computer_Graphics\Main.c(139,53): warning C4244: 'function': conversion from 'float' to 'int', possible loss of data
+C:\Users\rapha\OneDrive\Desktop\Raphael\Projetos\Pikuma\3D_Computer_Graphics\3D_Computer_Graphics\Main.c(140,31): warning C4244: 'function': conversion from 'float' to 'int', possible loss of data
+C:\Users\rapha\OneDrive\Desktop\Raphael\Projetos\Pikuma\3D_Computer_Graphics\3D_Computer_Graphics\Main.c(140,53): warning C4244: 'function': conversion from 'float' to 'int', possible loss of data
   3D_Computer_Graphics.vcxproj -> C:\Users\rapha\OneDrive\Desktop\Raphael\Projetos\Pikuma\3D_Computer_Graphics\x64\Debug\3D_Computer_Graphics.exe

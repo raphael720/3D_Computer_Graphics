@@ -8,7 +8,7 @@
 
 triangle_t* triangles_to_render = NULL;
 
-vec3_t camera_position = { .x = 0, .y = 0, .z = -5 };
+vec3_t camera_position = { 0, 0, 0 };
 float fov_factor = 640;
 
 bool is_running = false;
@@ -27,7 +27,7 @@ void setup(void) {
 	);
 
 	//load_cube_mesh.rotation_data();
-	load_obj_file_data("C:\\Users\\rapha\\OneDrive\\Desktop\\Raphael\\Projetos\\Pikuma\\assets\\f22.obj");
+	load_obj_file_data("C:\\Users\\rapha\\OneDrive\\Desktop\\Raphael\\Projetos\\Pikuma\\assets\\cube.obj");
 }
 
 void process_input(void) {
@@ -65,8 +65,8 @@ void update(void) {
 	triangles_to_render = NULL;
 
 	mesh.rotation.x += 0.01;
-	mesh.rotation.y += 0.0;
-	mesh.rotation.z += 0.0;
+	mesh.rotation.y += 0.01;
+	mesh.rotation.z += 0.01;
 
 	// Loop for all triangles faces in the mesh.rotation
 	vec3_t face_vertices[3];
@@ -78,8 +78,9 @@ void update(void) {
 		face_vertices[1] = mesh.vertices[mesh_face.b -1];
 		face_vertices[2] = mesh.vertices[mesh_face.c -1];
 
+		vec3_t transformed_vertices[3];
+
 		// Loop for all three vertices of the triangle and aply transformation
-		triangle_t projected_triangle;
 		for (int j = 0; j < 3; j++) {
 			vec3_t transformed_vertex = face_vertices[j];
 
@@ -88,9 +89,33 @@ void update(void) {
 			transformed_vertex = vec3_rotate_z(&transformed_vertex, mesh.rotation.z);
 
 			// Translate the vertex away from the camera
-			transformed_vertex.z -= camera_position.z;
+			transformed_vertex.z += 5;
+			transformed_vertices[j] = transformed_vertex;
+		}
 
-			vec2_t project_vectex = project(transformed_vertex);
+		// Checking the back-face culling
+		vec3_t vector_a = transformed_vertices[0];
+		vec3_t vector_b = transformed_vertices[1];
+		vec3_t vector_c = transformed_vertices[2];
+
+		vec3_t vector_ab = vec3_sub(vector_b, vector_a);
+		vec3_t vector_ac = vec3_sub(vector_c, vector_a);
+
+		// Cross product to find the normal vector
+		vec3_t normal_vector = vec3_cross(vector_ab, vector_ac);
+
+		// The vector between the camera position and a traingle vertex
+		vec3_t camera_ray = vec3_sub(camera_position, vector_a);
+
+		float dot_normal_camera = vec3_dot(normal_vector, camera_ray);
+
+		// Bypass the triangles that are looking away from the camera 
+		if (dot_normal_camera < 0) continue;
+
+		// Loop for all three vertices to perform projection
+		triangle_t projected_triangle;
+		for (int j = 0; j < 3; j++) {
+			vec2_t project_vectex = project(transformed_vertices[j]);
 
 			// scale the projected vertex to the middle of the screen
 			project_vectex.x += window_width / 2;
