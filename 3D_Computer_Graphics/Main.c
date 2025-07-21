@@ -104,6 +104,9 @@ void update(void) {
 		// Cross product to find the normal vector
 		vec3_t normal_vector = vec3_cross(vector_ab, vector_ac);
 
+		//Normalize the normal vector
+		vec3_normalize(&normal_vector);
+
 		// The vector between the camera position and a traingle vertex
 		vec3_t camera_ray = vec3_sub(camera_position, vector_a);
 
