@@ -142,8 +142,15 @@ void render(void) {
 		draw_rect(triangle.points[1].x, triangle.points[1].y, 3, 3, 0xFFFFFF00);
 		draw_rect(triangle.points[2].x, triangle.points[2].y, 3, 3, 0xFFFFFF00);
 
-		draw_triangle(triangle.points[0], triangle.points[1], triangle.points[2], 0xFF00FF00);
+		draw_filled_triangle(triangle.points[0].x, triangle.points[0].y,
+							triangle.points[1].x, triangle.points[1].y,
+							triangle.points[2].x, triangle.points[2].y,
+							0xFFFFFFFF);
+
+		draw_triangle(triangle.points[0], triangle.points[1], triangle.points[2], 0xFF000000);
 	}
+
+	//draw_filled_triangle(300, 100, 50, 400, 500, 700, 0xFF00FF00);
 
 	// clear triangles to render array
 	array_free(triangles_to_render);
