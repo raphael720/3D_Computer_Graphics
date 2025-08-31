@@ -1,17 +1,45 @@
 ﻿  Main.c
-C:\Users\rapha\OneDrive\Desktop\Raphael\Projetos\Pikuma\3D_Computer_Graphics\3D_Computer_Graphics\Main.c(67,21): warning C4305: '+=': truncation from 'double' to 'float'
-C:\Users\rapha\OneDrive\Desktop\Raphael\Projetos\Pikuma\3D_Computer_Graphics\3D_Computer_Graphics\Main.c(68,21): warning C4305: '+=': truncation from 'double' to 'float'
-C:\Users\rapha\OneDrive\Desktop\Raphael\Projetos\Pikuma\3D_Computer_Graphics\3D_Computer_Graphics\Main.c(69,21): warning C4305: '+=': truncation from 'double' to 'float'
-C:\Users\rapha\OneDrive\Desktop\Raphael\Projetos\Pikuma\3D_Computer_Graphics\3D_Computer_Graphics\Main.c(141,31): warning C4244: 'function': conversion from 'float' to 'int', possible loss of data
-C:\Users\rapha\OneDrive\Desktop\Raphael\Projetos\Pikuma\3D_Computer_Graphics\3D_Computer_Graphics\Main.c(141,53): warning C4244: 'function': conversion from 'float' to 'int', possible loss of data
-C:\Users\rapha\OneDrive\Desktop\Raphael\Projetos\Pikuma\3D_Computer_Graphics\3D_Computer_Graphics\Main.c(142,31): warning C4244: 'function': conversion from 'float' to 'int', possible loss of data
-C:\Users\rapha\OneDrive\Desktop\Raphael\Projetos\Pikuma\3D_Computer_Graphics\3D_Computer_Graphics\Main.c(142,53): warning C4244: 'function': conversion from 'float' to 'int', possible loss of data
-C:\Users\rapha\OneDrive\Desktop\Raphael\Projetos\Pikuma\3D_Computer_Graphics\3D_Computer_Graphics\Main.c(143,31): warning C4244: 'function': conversion from 'float' to 'int', possible loss of data
-C:\Users\rapha\OneDrive\Desktop\Raphael\Projetos\Pikuma\3D_Computer_Graphics\3D_Computer_Graphics\Main.c(143,53): warning C4244: 'function': conversion from 'float' to 'int', possible loss of data
-C:\Users\rapha\OneDrive\Desktop\Raphael\Projetos\Pikuma\3D_Computer_Graphics\3D_Computer_Graphics\Main.c(145,42): warning C4244: 'function': conversion from 'float' to 'int', possible loss of data
-C:\Users\rapha\OneDrive\Desktop\Raphael\Projetos\Pikuma\3D_Computer_Graphics\3D_Computer_Graphics\Main.c(145,64): warning C4244: 'function': conversion from 'float' to 'int', possible loss of data
-C:\Users\rapha\OneDrive\Desktop\Raphael\Projetos\Pikuma\3D_Computer_Graphics\3D_Computer_Graphics\Main.c(146,26): warning C4244: 'function': conversion from 'float' to 'int', possible loss of data
-C:\Users\rapha\OneDrive\Desktop\Raphael\Projetos\Pikuma\3D_Computer_Graphics\3D_Computer_Graphics\Main.c(146,48): warning C4244: 'function': conversion from 'float' to 'int', possible loss of data
-C:\Users\rapha\OneDrive\Desktop\Raphael\Projetos\Pikuma\3D_Computer_Graphics\3D_Computer_Graphics\Main.c(147,26): warning C4244: 'function': conversion from 'float' to 'int', possible loss of data
-C:\Users\rapha\OneDrive\Desktop\Raphael\Projetos\Pikuma\3D_Computer_Graphics\3D_Computer_Graphics\Main.c(147,48): warning C4244: 'function': conversion from 'float' to 'int', possible loss of data
+  display.c
+C:\Users\rapha\OneDrive\Desktop\Raphael\Projetos\Pikuma\3D_Computer_Graphics\3D_Computer_Graphics\Main.c(85,21): warning C4305: '+=': truncation from 'double' to 'float'
+C:\Users\rapha\OneDrive\Desktop\Raphael\Projetos\Pikuma\3D_Computer_Graphics\3D_Computer_Graphics\Main.c(86,21): warning C4305: '+=': truncation from 'double' to 'float'
+C:\Users\rapha\OneDrive\Desktop\Raphael\Projetos\Pikuma\3D_Computer_Graphics\3D_Computer_Graphics\Main.c(87,21): warning C4305: '+=': truncation from 'double' to 'float'
+C:\Users\rapha\OneDrive\Desktop\Raphael\Projetos\Pikuma\3D_Computer_Graphics\3D_Computer_Graphics\Main.c(164,32): warning C4244: 'function': conversion from 'float' to 'int', possible loss of data
+C:\Users\rapha\OneDrive\Desktop\Raphael\Projetos\Pikuma\3D_Computer_Graphics\3D_Computer_Graphics\Main.c(164,54): warning C4244: 'function': conversion from 'float' to 'int', possible loss of data
+C:\Users\rapha\OneDrive\Desktop\Raphael\Projetos\Pikuma\3D_Computer_Graphics\3D_Computer_Graphics\Main.c(165,32): warning C4244: 'function': conversion from 'float' to 'int', possible loss of data
+C:\Users\rapha\OneDrive\Desktop\Raphael\Projetos\Pikuma\3D_Computer_Graphics\3D_Computer_Graphics\Main.c(165,54): warning C4244: 'function': conversion from 'float' to 'int', possible loss of data
+C:\Users\rapha\OneDrive\Desktop\Raphael\Projetos\Pikuma\3D_Computer_Graphics\3D_Computer_Graphics\Main.c(166,32): warning C4244: 'function': conversion from 'float' to 'int', possible loss of data
+C:\Users\rapha\OneDrive\Desktop\Raphael\Projetos\Pikuma\3D_Computer_Graphics\3D_Computer_Graphics\Main.c(166,54): warning C4244: 'function': conversion from 'float' to 'int', possible loss of data
+C:\Users\rapha\OneDrive\Desktop\Raphael\Projetos\Pikuma\3D_Computer_Graphics\3D_Computer_Graphics\Main.c(170,43): warning C4244: 'function': conversion from 'float' to 'int', possible loss of data
+C:\Users\rapha\OneDrive\Desktop\Raphael\Projetos\Pikuma\3D_Computer_Graphics\3D_Computer_Graphics\Main.c(170,65): warning C4244: 'function': conversion from 'float' to 'int', possible loss of data
+C:\Users\rapha\OneDrive\Desktop\Raphael\Projetos\Pikuma\3D_Computer_Graphics\3D_Computer_Graphics\Main.c(171,27): warning C4244: 'function': conversion from 'float' to 'int', possible loss of data
+C:\Users\rapha\OneDrive\Desktop\Raphael\Projetos\Pikuma\3D_Computer_Graphics\3D_Computer_Graphics\Main.c(171,49): warning C4244: 'function': conversion from 'float' to 'int', possible loss of data
+C:\Users\rapha\OneDrive\Desktop\Raphael\Projetos\Pikuma\3D_Computer_Graphics\3D_Computer_Graphics\Main.c(172,27): warning C4244: 'function': conversion from 'float' to 'int', possible loss of data
+C:\Users\rapha\OneDrive\Desktop\Raphael\Projetos\Pikuma\3D_Computer_Graphics\3D_Computer_Graphics\Main.c(172,49): warning C4244: 'function': conversion from 'float' to 'int', possible loss of data
+C:\Users\rapha\OneDrive\Desktop\Raphael\Projetos\Pikuma\3D_Computer_Graphics\3D_Computer_Graphics\display.c(78,14): warning C4244: 'function': conversion from 'double' to 'int', possible loss of data
+C:\Users\rapha\OneDrive\Desktop\Raphael\Projetos\Pikuma\3D_Computer_Graphics\3D_Computer_Graphics\display.c(78,32): warning C4244: 'function': conversion from 'double' to 'int', possible loss of data
+C:\Users\rapha\OneDrive\Desktop\Raphael\Projetos\Pikuma\3D_Computer_Graphics\3D_Computer_Graphics\display.c(74,20): warning C4244: 'initializing': conversion from 'int' to 'float', possible loss of data
+C:\Users\rapha\OneDrive\Desktop\Raphael\Projetos\Pikuma\3D_Computer_Graphics\3D_Computer_Graphics\display.c(75,20): warning C4244: 'initializing': conversion from 'int' to 'float', possible loss of data
+C:\Users\rapha\OneDrive\Desktop\Raphael\Projetos\Pikuma\3D_Computer_Graphics\3D_Computer_Graphics\display.c(85,14): warning C4244: 'function': conversion from 'float' to 'int', possible loss of data
+C:\Users\rapha\OneDrive\Desktop\Raphael\Projetos\Pikuma\3D_Computer_Graphics\3D_Computer_Graphics\display.c(85,20): warning C4244: 'function': conversion from 'float' to 'int', possible loss of data
+C:\Users\rapha\OneDrive\Desktop\Raphael\Projetos\Pikuma\3D_Computer_Graphics\3D_Computer_Graphics\display.c(85,26): warning C4244: 'function': conversion from 'float' to 'int', possible loss of data
+C:\Users\rapha\OneDrive\Desktop\Raphael\Projetos\Pikuma\3D_Computer_Graphics\3D_Computer_Graphics\display.c(85,32): warning C4244: 'function': conversion from 'float' to 'int', possible loss of data
+C:\Users\rapha\OneDrive\Desktop\Raphael\Projetos\Pikuma\3D_Computer_Graphics\3D_Computer_Graphics\display.c(86,14): warning C4244: 'function': conversion from 'float' to 'int', possible loss of data
+C:\Users\rapha\OneDrive\Desktop\Raphael\Projetos\Pikuma\3D_Computer_Graphics\3D_Computer_Graphics\display.c(86,20): warning C4244: 'function': conversion from 'float' to 'int', possible loss of data
+C:\Users\rapha\OneDrive\Desktop\Raphael\Projetos\Pikuma\3D_Computer_Graphics\3D_Computer_Graphics\display.c(86,26): warning C4244: 'function': conversion from 'float' to 'int', possible loss of data
+C:\Users\rapha\OneDrive\Desktop\Raphael\Projetos\Pikuma\3D_Computer_Graphics\3D_Computer_Graphics\display.c(86,32): warning C4244: 'function': conversion from 'float' to 'int', possible loss of data
+C:\Users\rapha\OneDrive\Desktop\Raphael\Projetos\Pikuma\3D_Computer_Graphics\3D_Computer_Graphics\display.c(87,14): warning C4244: 'function': conversion from 'float' to 'int', possible loss of data
+C:\Users\rapha\OneDrive\Desktop\Raphael\Projetos\Pikuma\3D_Computer_Graphics\3D_Computer_Graphics\display.c(87,20): warning C4244: 'function': conversion from 'float' to 'int', possible loss of data
+C:\Users\rapha\OneDrive\Desktop\Raphael\Projetos\Pikuma\3D_Computer_Graphics\3D_Computer_Graphics\display.c(87,26): warning C4244: 'function': conversion from 'float' to 'int', possible loss of data
+C:\Users\rapha\OneDrive\Desktop\Raphael\Projetos\Pikuma\3D_Computer_Graphics\3D_Computer_Graphics\display.c(87,32): warning C4244: 'function': conversion from 'float' to 'int', possible loss of data
+  triangle.c
+C:\Users\rapha\OneDrive\Desktop\Raphael\Projetos\Pikuma\3D_Computer_Graphics\3D_Computer_Graphics\triangle.c(16,13): warning C4244: 'function': conversion from 'float' to 'int', possible loss of data
+C:\Users\rapha\OneDrive\Desktop\Raphael\Projetos\Pikuma\3D_Computer_Graphics\3D_Computer_Graphics\triangle.c(16,25): warning C4244: 'function': conversion from 'float' to 'int', possible loss of data
+C:\Users\rapha\OneDrive\Desktop\Raphael\Projetos\Pikuma\3D_Computer_Graphics\3D_Computer_Graphics\triangle.c(14,18): warning C4244: 'initializing': conversion from 'int' to 'float', possible loss of data
+C:\Users\rapha\OneDrive\Desktop\Raphael\Projetos\Pikuma\3D_Computer_Graphics\3D_Computer_Graphics\triangle.c(14,30): warning C4244: 'initializing': conversion from 'int' to 'float', possible loss of data
+C:\Users\rapha\OneDrive\Desktop\Raphael\Projetos\Pikuma\3D_Computer_Graphics\3D_Computer_Graphics\triangle.c(28,13): warning C4244: 'function': conversion from 'float' to 'int', possible loss of data
+C:\Users\rapha\OneDrive\Desktop\Raphael\Projetos\Pikuma\3D_Computer_Graphics\3D_Computer_Graphics\triangle.c(28,25): warning C4244: 'function': conversion from 'float' to 'int', possible loss of data
+C:\Users\rapha\OneDrive\Desktop\Raphael\Projetos\Pikuma\3D_Computer_Graphics\3D_Computer_Graphics\triangle.c(26,18): warning C4244: 'initializing': conversion from 'int' to 'float', possible loss of data
+C:\Users\rapha\OneDrive\Desktop\Raphael\Projetos\Pikuma\3D_Computer_Graphics\3D_Computer_Graphics\triangle.c(26,30): warning C4244: 'initializing': conversion from 'int' to 'float', possible loss of data
+C:\Users\rapha\OneDrive\Desktop\Raphael\Projetos\Pikuma\3D_Computer_Graphics\3D_Computer_Graphics\triangle.c(57,62): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data
+  Generating Code...
   3D_Computer_Graphics.vcxproj -> C:\Users\rapha\OneDrive\Desktop\Raphael\Projetos\Pikuma\3D_Computer_Graphics\x64\Debug\3D_Computer_Graphics.exe
