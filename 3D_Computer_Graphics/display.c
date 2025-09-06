@@ -81,12 +81,6 @@ void draw_line(int x0, int y0, int x1, int y1, uint32_t color) {
 	}
 }
 
-void draw_triangle(vec2_t p0, vec2_t p1, vec2_t p2, uint32_t color) {
-	draw_line(p0.x, p0.y, p1.x, p1.y, color);
-	draw_line(p1.x, p1.y, p2.x, p2.y, color);
-	draw_line(p2.x, p2.y, p0.x, p0.y, color);
-}
-
 void draw_rect(int x, int y, int width, int height, uint32_t color) {
 	for (int j = y; j < height + y; j++) {
 		for (int i = x; i < width + x; i++) {

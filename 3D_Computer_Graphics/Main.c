@@ -32,8 +32,8 @@ void setup(void) {
 		window_height
 	);
 
-	//load_cube_mesh.rotation_data();
-	load_obj_file_data("C:\\Users\\rapha\\OneDrive\\Desktop\\Raphael\\Projetos\\Pikuma\\assets\\cube.obj");
+	load_cube_mesh_data();
+	//load_obj_file_data("C:\\Users\\rapha\\OneDrive\\Desktop\\Raphael\\Projetos\\Pikuma\\assets\\cube.obj");
 }
 
 void process_input(void) {
@@ -136,26 +136,34 @@ void update(void) {
 		}
 
 
-		// Loop for all three vertices to perform projection
-		triangle_t projected_triangle;
+		 //loop for all three vertices to perform projection
+		
+		vec2_t projected_points[3];
+
 		for (int j = 0; j < 3; j++) {
-			vec2_t project_vectex = project(transformed_vertices[j]);
+			projected_points[j] = project(transformed_vertices[j]);
 
 			// scale the projected vertex to the middle of the screen
-			project_vectex.x += window_width / 2;
-			project_vectex.y += window_height / 2;
-
-			projected_triangle.points[j] = project_vectex;
+			projected_points[j].x += window_width / 2;
+			projected_points[j].y += window_height / 2;
 		}
 
+		triangle_t projected_triangle = {
+			.points = {
+				{projected_points[0].x, projected_points[0].y},
+				{projected_points[1].x, projected_points[1].y},
+				{projected_points[2].x, projected_points[2].y}
+			},
+			.color = mesh_face.color
+		};
+
 		// Store the projected triangle
-		//triangles_to_render[i] = projected_triangle;
 		array_push(triangles_to_render, projected_triangle);
 	}
 }
 
 void render(void) {
-	//draw_grid();
+	draw_grid();
 
 	int num_triangles = array_length(triangles_to_render);
 	for (int i = 0; i < num_triangles; i++) {
@@ -170,7 +178,7 @@ void render(void) {
 			draw_filled_triangle(triangle.points[0].x, triangle.points[0].y,
 								triangle.points[1].x, triangle.points[1].y,
 								triangle.points[2].x, triangle.points[2].y,
-								GREEN);
+								triangle.color);
 		}
 
 		if (render_method == RENDER_WIRE || render_method == RENDER_WIRE_VERTEX || render_method == RENDER_FILL_TRIANGLE_WIRE)
